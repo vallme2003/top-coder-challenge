@@ -9,7 +9,10 @@
       "Bash(pip install:*)",
       "Bash(./generate_results.sh:*)",
       "Bash(python tests:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(bash eval.sh)",
+      "Bash(echo:*)",
+      "Bash(bash:*)"
     ],
     "deny": []
   }
