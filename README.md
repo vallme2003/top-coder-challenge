@@ -267,11 +267,12 @@ python -m unittest tests.test_data_models
 
 ## 📈 Performance Metrics
 
-Based on public case evaluation:
+Based on comprehensive evaluation against 1,000 public test cases:
 
-- **Average Error**: ~$90.50 (significantly better than naive approaches)
-- **Score**: 9,150 (lower is better)
-- **Close Matches**: 0.3% within $1.00
+- **Average Error**: $90.50 (significantly better than naive approaches)
+- **Final Score**: 9,150.00 (lower is better)
+- **Success Rate**: 100% successful predictions (1,000/1,000)
+- **Close Matches**: 3 cases within ±$1.00 (0.3% precision rate)
 - **Execution Time**: <1 second per prediction
 
 ### Model Performance Validation
@@ -384,7 +385,9 @@ python tests/run_tests.py
 After extensive analysis and iterations, our final solution uses a sophisticated decision tree model (`calculate_reimbursement_tree.py`) that achieved:
 
 **🎯 Performance Metrics:**
-- **Public Score**: 9,150 (avg error ~$91.50)
+- **Public Score**: 9,150.00 (avg error $90.50)
+- **Test Coverage**: 1,000 cases, 100% successful runs
+- **Accuracy**: 3 close matches (±$1.00), 0.3% precision rate
 - **Leaderboard Position**: ~3rd place (target was to beat 8,891.41)
 - **Private Predictions**: 5,000 test cases generated in `private_results.txt`
 
@@ -444,7 +447,7 @@ def tree_predict(days, miles, receipts):
 
 | Model | Public Score | Strengths | Use Case |
 |-------|-------------|-----------|----------|
-| **Tree Champion** ⭐ | **9,150** | Best balance, interpretable | **Final submission** |
+| **Tree Champion** ⭐ | **9,150.00** | Best balance, interpretable | **Final submission** |
 | Linear Champion | 9,654 | Fast, simple | Baseline comparison |
 | Fast Champion | 9,200 | Feature-rich | Alternative approach |
 
