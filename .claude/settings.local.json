@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp:*)",
+      "Bash(python3:*)",
+      "Bash(chmod:*)",
+      "Bash(./run.sh:*)",
+      "Bash(./eval.sh)",
+      "Bash(pip install:*)",
+      "Bash(./generate_results.sh:*)",
+      "Bash(python tests:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": []
+  }
+}
