@@ -12,7 +12,10 @@
       "Bash(git add:*)",
       "Bash(bash eval.sh)",
       "Bash(echo:*)",
-      "Bash(bash:*)"
+      "Bash(bash:*)",
+      "Bash(grep:*)",
+      "Bash(ls:*)",
+      "Bash(rm:*)"
     ],
     "deny": []
   }
