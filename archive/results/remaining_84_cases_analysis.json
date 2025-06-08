@@ -1,0 +1,1774 @@
+{
+  "analysis_timestamp": "2025-06-07T16:34:58.215074",
+  "summary": {
+    "total_unsolved_cases": 84,
+    "total_public_cases": 1000,
+    "percentage_solved": 91.6,
+    "percentage_remaining": 8.4
+  },
+  "unsolved_case_numbers": [
+    30,
+    32,
+    50,
+    60,
+    90,
+    102,
+    115,
+    135,
+    164,
+    173,
+    199,
+    210,
+    224,
+    253,
+    254,
+    266,
+    270,
+    278,
+    284,
+    288,
+    298,
+    314,
+    333,
+    336,
+    354,
+    359,
+    364,
+    367,
+    370,
+    378,
+    380,
+    405,
+    408,
+    429,
+    449,
+    464,
+    467,
+    484,
+    494,
+    499,
+    505,
+    520,
+    525,
+    530,
+    531,
+    545,
+    547,
+    548,
+    603,
+    612,
+    613,
+    619,
+    634,
+    636,
+    652,
+    677,
+    693,
+    694,
+    701,
+    703,
+    711,
+    712,
+    714,
+    716,
+    733,
+    735,
+    744,
+    795,
+    801,
+    802,
+    854,
+    855,
+    861,
+    863,
+    871,
+    881,
+    885,
+    914,
+    923,
+    940,
+    954,
+    964,
+    981,
+    990
+  ],
+  "key_patterns": {
+    "receipt_dominance": {
+      "description": "Most unsolved cases have very high receipt amounts",
+      "very_high_receipts": 33,
+      "high_receipts": 20,
+      "total_high_plus_receipts": 53,
+      "percentage_high_receipts": 63.1
+    },
+    "trip_duration_distribution": {
+      "short_trips_1_3_days": 13,
+      "medium_trips_4_7_days": 35,
+      "long_trips_8_plus_days": 36
+    },
+    "extreme_cases": {
+      "very_high_receipts_per_day": [
+        {
+          "case_num": 199,
+          "days": 1,
+          "receipts_per_day": 2273.6
+        },
+        {
+          "case_num": 940,
+          "days": 1,
+          "receipts_per_day": 2320.13
+        },
+        {
+          "case_num": 694,
+          "days": 1,
+          "receipts_per_day": 2011.44
+        },
+        {
+          "case_num": 885,
+          "days": 2,
+          "receipts_per_day": 1191.19
+        }
+      ],
+      "very_high_miles_per_day": [
+        {
+          "case_num": 694,
+          "days": 1,
+          "miles_per_day": 1112.0
+        },
+        {
+          "case_num": 940,
+          "days": 1,
+          "miles_per_day": 1002.0
+        },
+        {
+          "case_num": 981,
+          "days": 1,
+          "miles_per_day": 1122.0
+        }
+      ],
+      "very_low_miles": [
+        {
+          "case_num": 288,
+          "days": 12,
+          "miles": 64
+        },
+        {
+          "case_num": 547,
+          "days": 3,
+          "miles": 80
+        },
+        {
+          "case_num": 861,
+          "days": 7,
+          "miles": 15
+        },
+        {
+          "case_num": 863,
+          "days": 5,
+          "miles": 41
+        }
+      ]
+    },
+    "output_input_relationships": {
+      "description": "Many cases show expected \u2248 receipts or expected \u2248 miles + receipts",
+      "expected_approx_receipts": 37,
+      "expected_approx_miles_plus_receipts": 7,
+      "low_ratio_cases": [
+        711,
+        115,
+        548,
+        199,
+        173
+      ],
+      "high_ratio_cases": [
+        32,
+        499,
+        530,
+        714,
+        354
+      ]
+    }
+  },
+  "statistical_ranges": {
+    "days": {
+      "min": 1,
+      "max": 14,
+      "mean": 7.2023809523809526,
+      "median": 7.0,
+      "std_dev": 3.5830247769059556
+    },
+    "miles": {
+      "min": 15,
+      "max": 1185,
+      "mean": 707.0678571428572,
+      "median": 764.5,
+      "std_dev": 335.6250878623077
+    },
+    "receipts": {
+      "min": 255.99,
+      "max": 2497.93,
+      "mean": 1665.5615476190476,
+      "median": 1852.94,
+      "std_dev": 638.6688985893135
+    },
+    "expected": {
+      "min": 150.34,
+      "max": 2337.73,
+      "mean": 1511.6663095238096,
+      "median": 1593.9499999999998,
+      "std_dev": 414.8877955610329
+    },
+    "miles_per_day": {
+      "min": 2.142857142857143,
+      "max": 1122.0,
+      "mean": 155.89334058005485,
+      "median": 99.27777777777777,
+      "std_dev": 201.0300583313104
+    },
+    "receipts_per_day": {
+      "min": 22.409285714285716,
+      "max": 2320.13,
+      "mean": 356.9289689143528,
+      "median": 223.25633333333332,
+      "std_dev": 415.9697697962361
+    },
+    "expected_per_day": {
+      "min": 62.654999999999994,
+      "max": 1475.4,
+      "mean": 294.6035875268911,
+      "median": 199.1585,
+      "std_dev": 262.5232278787572
+    }
+  },
+  "groupings": {
+    "by_trip_duration": {
+      "5": {
+        "count": 18,
+        "case_numbers": [
+          30,
+          32,
+          90,
+          115,
+          164,
+          224,
+          364,
+          378,
+          380,
+          405,
+          499,
+          603,
+          677,
+          703,
+          711,
+          744,
+          863,
+          923
+        ],
+        "miles_range": [
+          41,
+          1160
+        ],
+        "receipts_range": [
+          429.24,
+          2460.46
+        ],
+        "expected_range": [
+          511.23,
+          1749.31
+        ]
+      },
+      "10": {
+        "count": 12,
+        "case_numbers": [
+          50,
+          266,
+          284,
+          333,
+          354,
+          359,
+          429,
+          449,
+          545,
+          693,
+          795,
+          954
+        ],
+        "miles_range": [
+          150,
+          1083
+        ],
+        "receipts_range": [
+          298.68,
+          2272.56
+        ],
+        "expected_range": [
+          844.9,
+          2000.19
+        ]
+      },
+      "9": {
+        "count": 4,
+        "case_numbers": [
+          60,
+          484,
+          733,
+          881
+        ],
+        "miles_range": [
+          800,
+          1139
+        ],
+        "receipts_range": [
+          1398.54,
+          2167.72
+        ],
+        "expected_range": [
+          1694.37,
+          1759.33
+        ]
+      },
+      "1": {
+        "count": 6,
+        "case_numbers": [
+          102,
+          173,
+          199,
+          694,
+          940,
+          981
+        ],
+        "miles_range": [
+          140,
+          1122
+        ],
+        "receipts_range": [
+          255.99,
+          2320.13
+        ],
+        "expected_range": [
+          150.34,
+          1475.4
+        ]
+      },
+      "7": {
+        "count": 10,
+        "case_numbers": [
+          135,
+          298,
+          336,
+          408,
+          464,
+          467,
+          612,
+          652,
+          801,
+          861
+        ],
+        "miles_range": [
+          15,
+          1185
+        ],
+        "receipts_range": [
+          1379.35,
+          2489.13
+        ],
+        "expected_range": [
+          1459.63,
+          2072.18
+        ]
+      },
+      "6": {
+        "count": 3,
+        "case_numbers": [
+          210,
+          619,
+          802
+        ],
+        "miles_range": [
+          470,
+          751
+        ],
+        "receipts_range": [
+          1800.71,
+          2235.72
+        ],
+        "expected_range": [
+          1628.6,
+          1757.81
+        ]
+      },
+      "3": {
+        "count": 6,
+        "case_numbers": [
+          253,
+          547,
+          634,
+          735,
+          855,
+          990
+        ],
+        "miles_range": [
+          80,
+          1159
+        ],
+        "receipts_range": [
+          517.54,
+          2497.93
+        ],
+        "expected_range": [
+          457.49,
+          1587.8
+        ]
+      },
+      "11": {
+        "count": 4,
+        "case_numbers": [
+          254,
+          270,
+          367,
+          531
+        ],
+        "miles_range": [
+          448,
+          920
+        ],
+        "receipts_range": [
+          732.79,
+          2223.72
+        ],
+        "expected_range": [
+          902.09,
+          1871.27
+        ]
+      },
+      "12": {
+        "count": 3,
+        "case_numbers": [
+          278,
+          288,
+          636
+        ],
+        "miles_range": [
+          64,
+          1088
+        ],
+        "receipts_range": [
+          1300.05,
+          1977.91
+        ],
+        "expected_range": [
+          1710.72,
+          1883.21
+        ]
+      },
+      "4": {
+        "count": 4,
+        "case_numbers": [
+          314,
+          370,
+          701,
+          854
+        ],
+        "miles_range": [
+          448,
+          1180
+        ],
+        "receipts_range": [
+          874.99,
+          2055.97
+        ],
+        "expected_range": [
+          784.52,
+          1575.87
+        ]
+      },
+      "14": {
+        "count": 5,
+        "case_numbers": [
+          494,
+          520,
+          712,
+          714,
+          871
+        ],
+        "miles_range": [
+          481,
+          1020
+        ],
+        "receipts_range": [
+          313.73,
+          2374.41
+        ],
+        "expected_range": [
+          877.17,
+          2337.73
+        ]
+      },
+      "8": {
+        "count": 5,
+        "case_numbers": [
+          505,
+          530,
+          548,
+          716,
+          964
+        ],
+        "miles_range": [
+          482,
+          1185
+        ],
+        "receipts_range": [
+          554.98,
+          2479.33
+        ],
+        "expected_range": [
+          631.81,
+          1794.57
+        ]
+      },
+      "13": {
+        "count": 3,
+        "case_numbers": [
+          525,
+          613,
+          914
+        ],
+        "miles_range": [
+          710,
+          1055
+        ],
+        "receipts_range": [
+          1798.75,
+          2223.86
+        ],
+        "expected_range": [
+          1951.77,
+          1997.52
+        ]
+      },
+      "2": {
+        "count": 1,
+        "case_numbers": [
+          885
+        ],
+        "miles_range": [
+          897,
+          897
+        ],
+        "receipts_range": [
+          2382.39,
+          2382.39
+        ],
+        "expected_range": [
+          1437.95,
+          1437.95
+        ]
+      }
+    },
+    "by_miles_per_day": {
+      "low (0-50)": {
+        "count": 19,
+        "case_numbers": [
+          50,
+          115,
+          270,
+          278,
+          284,
+          288,
+          449,
+          464,
+          494,
+          520,
+          531,
+          547,
+          652,
+          714,
+          795,
+          801,
+          861,
+          863,
+          954
+        ]
+      },
+      "medium (50-100)": {
+        "count": 24,
+        "case_numbers": [
+          60,
+          210,
+          254,
+          266,
+          354,
+          359,
+          364,
+          367,
+          467,
+          484,
+          505,
+          525,
+          545,
+          548,
+          613,
+          619,
+          636,
+          693,
+          712,
+          716,
+          733,
+          871,
+          914,
+          923
+        ]
+      },
+      "high (100-200)": {
+        "count": 21,
+        "case_numbers": [
+          30,
+          32,
+          90,
+          135,
+          173,
+          224,
+          298,
+          314,
+          333,
+          336,
+          380,
+          408,
+          429,
+          499,
+          530,
+          612,
+          703,
+          711,
+          802,
+          881,
+          964
+        ]
+      },
+      "very_high (200+)": {
+        "count": 20,
+        "case_numbers": [
+          102,
+          164,
+          199,
+          253,
+          370,
+          378,
+          405,
+          603,
+          634,
+          677,
+          694,
+          701,
+          735,
+          744,
+          854,
+          855,
+          885,
+          940,
+          981,
+          990
+        ]
+      }
+    },
+    "by_receipts_per_day": {
+      "medium (10-30)": {
+        "count": 2,
+        "case_numbers": [
+          354,
+          714
+        ]
+      },
+      "high (30-50)": {
+        "count": 1,
+        "case_numbers": [
+          795
+        ]
+      },
+      "very_high (50+)": {
+        "count": 81,
+        "case_numbers": [
+          30,
+          32,
+          50,
+          60,
+          90,
+          102,
+          115,
+          135,
+          164,
+          173,
+          199,
+          210,
+          224,
+          253,
+          254,
+          266,
+          270,
+          278,
+          284,
+          288,
+          298,
+          314,
+          333,
+          336,
+          359,
+          364,
+          367,
+          370,
+          378,
+          380,
+          405,
+          408,
+          429,
+          449,
+          464,
+          467,
+          484,
+          494,
+          499,
+          505,
+          520,
+          525,
+          530,
+          531,
+          545,
+          547,
+          548,
+          603,
+          612,
+          613,
+          619,
+          634,
+          636,
+          652,
+          677,
+          693,
+          694,
+          701,
+          703,
+          711,
+          712,
+          716,
+          733,
+          735,
+          744,
+          801,
+          802,
+          854,
+          855,
+          861,
+          863,
+          871,
+          881,
+          885,
+          914,
+          923,
+          940,
+          954,
+          964,
+          981,
+          990
+        ]
+      }
+    },
+    "similar_characteristic_groups": {
+      "long_medium_high": {
+        "count": 7,
+        "cases": [
+          50,
+          494,
+          505,
+          525,
+          531,
+          716,
+          954
+        ]
+      },
+      "long_high_medium": {
+        "count": 10,
+        "cases": [
+          60,
+          254,
+          545,
+          613,
+          636,
+          693,
+          733,
+          871,
+          881,
+          964
+        ]
+      },
+      "medium_medium_medium": {
+        "count": 9,
+        "cases": [
+          210,
+          224,
+          364,
+          380,
+          464,
+          467,
+          703,
+          711,
+          923
+        ]
+      },
+      "medium_high_medium": {
+        "count": 7,
+        "cases": [
+          135,
+          336,
+          378,
+          405,
+          612,
+          701,
+          854
+        ]
+      },
+      "long_high_high": {
+        "count": 6,
+        "cases": [
+          266,
+          333,
+          429,
+          484,
+          712,
+          914
+        ]
+      },
+      "short_high_high": {
+        "count": 4,
+        "cases": [
+          253,
+          694,
+          885,
+          940
+        ]
+      },
+      "medium_high_high": {
+        "count": 4,
+        "cases": [
+          164,
+          298,
+          677,
+          744
+        ]
+      },
+      "short_medium_high": {
+        "count": 4,
+        "cases": [
+          199,
+          634,
+          735,
+          855
+        ]
+      },
+      "medium_medium_high": {
+        "count": 4,
+        "cases": [
+          314,
+          408,
+          619,
+          802
+        ]
+      }
+    }
+  },
+  "search_strategy_recommendations": {
+    "high_priority_groups": {
+      "single_day_high_receipts": {
+        "description": "Single day trips with extremely high receipts and miles",
+        "cases": [
+          199,
+          694,
+          940
+        ],
+        "rationale": "These are the most extreme cases and likely need special handling"
+      },
+      "low_miles_high_receipts": {
+        "description": "Cases with very low miles but high receipts",
+        "cases": [
+          284,
+          288,
+          861,
+          863
+        ],
+        "rationale": "Unusual pattern that might have a specific formula"
+      },
+      "receipt_dominant_medium_trips": {
+        "description": "Medium-length trips where receipts dominate the calculation",
+        "cases": [
+          210,
+          224,
+          364,
+          380,
+          464,
+          467,
+          703,
+          711,
+          923
+        ],
+        "rationale": "Large group with consistent pattern of expected \u2248 receipts"
+      }
+    },
+    "formula_hypotheses": [
+      {
+        "pattern": "expected = receipts + small_adjustment",
+        "applicable_cases": "Most cases where expected \u2248 receipts",
+        "case_count": 37
+      },
+      {
+        "pattern": "expected = miles + receipts + day_adjustment",
+        "applicable_cases": "Cases where expected \u2248 miles + receipts",
+        "case_count": 7
+      },
+      {
+        "pattern": "complex_formula_for_extremes",
+        "applicable_cases": "Single day cases with very high values",
+        "case_count": 6
+      }
+    ]
+  },
+  "detailed_case_data": [
+    {
+      "case_num": 30,
+      "days": 5,
+      "miles": 811,
+      "receipts": 952.39,
+      "expected": 1608.6,
+      "miles_per_day": 162.2,
+      "receipts_per_day": 190.478,
+      "expected_per_day": 321.71999999999997
+    },
+    {
+      "case_num": 32,
+      "days": 5,
+      "miles": 730,
+      "receipts": 485.73,
+      "expected": 991.49,
+      "miles_per_day": 146.0,
+      "receipts_per_day": 97.146,
+      "expected_per_day": 198.298
+    },
+    {
+      "case_num": 50,
+      "days": 10,
+      "miles": 358,
+      "receipts": 2066.62,
+      "expected": 1624.11,
+      "miles_per_day": 35.8,
+      "receipts_per_day": 206.66199999999998,
+      "expected_per_day": 162.411
+    },
+    {
+      "case_num": 60,
+      "days": 9,
+      "miles": 885,
+      "receipts": 1764.97,
+      "expected": 1694.37,
+      "miles_per_day": 98.33333333333333,
+      "receipts_per_day": 196.10777777777778,
+      "expected_per_day": 188.26333333333332
+    },
+    {
+      "case_num": 90,
+      "days": 5,
+      "miles": 754,
+      "receipts": 489.99,
+      "expected": 765.13,
+      "miles_per_day": 150.8,
+      "receipts_per_day": 97.998,
+      "expected_per_day": 153.026
+    },
+    {
+      "case_num": 102,
+      "days": 1,
+      "miles": 257.97,
+      "receipts": 816.81,
+      "expected": 738.01,
+      "miles_per_day": 257.97,
+      "receipts_per_day": 816.81,
+      "expected_per_day": 738.01
+    },
+    {
+      "case_num": 115,
+      "days": 5,
+      "miles": 195.73,
+      "receipts": 1228.49,
+      "expected": 511.23,
+      "miles_per_day": 39.146,
+      "receipts_per_day": 245.698,
+      "expected_per_day": 102.24600000000001
+    },
+    {
+      "case_num": 135,
+      "days": 7,
+      "miles": 1010,
+      "receipts": 1514.03,
+      "expected": 2063.98,
+      "miles_per_day": 144.28571428571428,
+      "receipts_per_day": 216.29,
+      "expected_per_day": 294.8542857142857
+    },
+    {
+      "case_num": 164,
+      "days": 5,
+      "miles": 1004,
+      "receipts": 2367.63,
+      "expected": 1743.85,
+      "miles_per_day": 200.8,
+      "receipts_per_day": 473.526,
+      "expected_per_day": 348.77
+    },
+    {
+      "case_num": 173,
+      "days": 1,
+      "miles": 140,
+      "receipts": 255.99,
+      "expected": 150.34,
+      "miles_per_day": 140.0,
+      "receipts_per_day": 255.99,
+      "expected_per_day": 150.34
+    },
+    {
+      "case_num": 199,
+      "days": 1,
+      "miles": 420,
+      "receipts": 2273.6,
+      "expected": 1220.35,
+      "miles_per_day": 420.0,
+      "receipts_per_day": 2273.6,
+      "expected_per_day": 1220.35
+    },
+    {
+      "case_num": 210,
+      "days": 6,
+      "miles": 475,
+      "receipts": 1800.71,
+      "expected": 1671.23,
+      "miles_per_day": 79.16666666666667,
+      "receipts_per_day": 300.11833333333334,
+      "expected_per_day": 278.53833333333336
+    },
+    {
+      "case_num": 224,
+      "days": 5,
+      "miles": 516,
+      "receipts": 1450.67,
+      "expected": 1547.5,
+      "miles_per_day": 103.2,
+      "receipts_per_day": 290.134,
+      "expected_per_day": 309.5
+    },
+    {
+      "case_num": 253,
+      "days": 3,
+      "miles": 1159,
+      "receipts": 2209.44,
+      "expected": 1434.84,
+      "miles_per_day": 386.3333333333333,
+      "receipts_per_day": 736.48,
+      "expected_per_day": 478.28
+    },
+    {
+      "case_num": 254,
+      "days": 11,
+      "miles": 920,
+      "receipts": 1338.65,
+      "expected": 1871.27,
+      "miles_per_day": 83.63636363636364,
+      "receipts_per_day": 121.69545454545455,
+      "expected_per_day": 170.11545454545455
+    },
+    {
+      "case_num": 266,
+      "days": 10,
+      "miles": 976,
+      "receipts": 2166.02,
+      "expected": 1775.03,
+      "miles_per_day": 97.6,
+      "receipts_per_day": 216.602,
+      "expected_per_day": 177.503
+    },
+    {
+      "case_num": 270,
+      "days": 11,
+      "miles": 448,
+      "receipts": 732.79,
+      "expected": 1090.35,
+      "miles_per_day": 40.72727272727273,
+      "receipts_per_day": 66.61727272727272,
+      "expected_per_day": 99.12272727272726
+    },
+    {
+      "case_num": 278,
+      "days": 12,
+      "miles": 104,
+      "receipts": 1300.05,
+      "expected": 1779.92,
+      "miles_per_day": 8.666666666666666,
+      "receipts_per_day": 108.33749999999999,
+      "expected_per_day": 148.32666666666668
+    },
+    {
+      "case_num": 284,
+      "days": 10,
+      "miles": 160,
+      "receipts": 2272.56,
+      "expected": 1642.15,
+      "miles_per_day": 16.0,
+      "receipts_per_day": 227.256,
+      "expected_per_day": 164.215
+    },
+    {
+      "case_num": 288,
+      "days": 12,
+      "miles": 64,
+      "receipts": 1641.01,
+      "expected": 1710.72,
+      "miles_per_day": 5.333333333333333,
+      "receipts_per_day": 136.75083333333333,
+      "expected_per_day": 142.56
+    },
+    {
+      "case_num": 298,
+      "days": 7,
+      "miles": 1176,
+      "receipts": 2489.13,
+      "expected": 1921.16,
+      "miles_per_day": 168.0,
+      "receipts_per_day": 355.59000000000003,
+      "expected_per_day": 274.4514285714286
+    },
+    {
+      "case_num": 314,
+      "days": 4,
+      "miles": 448,
+      "receipts": 2055.97,
+      "expected": 1497.46,
+      "miles_per_day": 112.0,
+      "receipts_per_day": 513.9925,
+      "expected_per_day": 374.365
+    },
+    {
+      "case_num": 333,
+      "days": 10,
+      "miles": 1083,
+      "receipts": 2105.36,
+      "expected": 1844.58,
+      "miles_per_day": 108.3,
+      "receipts_per_day": 210.536,
+      "expected_per_day": 184.458
+    },
+    {
+      "case_num": 336,
+      "days": 7,
+      "miles": 1185,
+      "receipts": 1768.01,
+      "expected": 2072.18,
+      "miles_per_day": 169.28571428571428,
+      "receipts_per_day": 252.57285714285715,
+      "expected_per_day": 296.0257142857143
+    },
+    {
+      "case_num": 354,
+      "days": 10,
+      "miles": 888,
+      "receipts": 298.68,
+      "expected": 1171.54,
+      "miles_per_day": 88.8,
+      "receipts_per_day": 29.868000000000002,
+      "expected_per_day": 117.154
+    },
+    {
+      "case_num": 359,
+      "days": 10,
+      "miles": 796,
+      "receipts": 1352.08,
+      "expected": 2000.19,
+      "miles_per_day": 79.6,
+      "receipts_per_day": 135.208,
+      "expected_per_day": 200.019
+    },
+    {
+      "case_num": 364,
+      "days": 5,
+      "miles": 467,
+      "receipts": 1243.31,
+      "expected": 1549.82,
+      "miles_per_day": 93.4,
+      "receipts_per_day": 248.66199999999998,
+      "expected_per_day": 309.964
+    },
+    {
+      "case_num": 367,
+      "days": 11,
+      "miles": 740,
+      "receipts": 1171.99,
+      "expected": 902.09,
+      "miles_per_day": 67.27272727272727,
+      "receipts_per_day": 106.54454545454546,
+      "expected_per_day": 82.00818181818182
+    },
+    {
+      "case_num": 370,
+      "days": 4,
+      "miles": 825,
+      "receipts": 874.99,
+      "expected": 784.52,
+      "miles_per_day": 206.25,
+      "receipts_per_day": 218.7475,
+      "expected_per_day": 196.13
+    },
+    {
+      "case_num": 378,
+      "days": 5,
+      "miles": 1014,
+      "receipts": 1853.57,
+      "expected": 1749.31,
+      "miles_per_day": 202.8,
+      "receipts_per_day": 370.714,
+      "expected_per_day": 349.86199999999997
+    },
+    {
+      "case_num": 380,
+      "days": 5,
+      "miles": 654,
+      "receipts": 1272.89,
+      "expected": 1724.68,
+      "miles_per_day": 130.8,
+      "receipts_per_day": 254.57800000000003,
+      "expected_per_day": 344.93600000000004
+    },
+    {
+      "case_num": 405,
+      "days": 5,
+      "miles": 1160,
+      "receipts": 1901.83,
+      "expected": 1673.89,
+      "miles_per_day": 232.0,
+      "receipts_per_day": 380.366,
+      "expected_per_day": 334.778
+    },
+    {
+      "case_num": 408,
+      "days": 7,
+      "miles": 776,
+      "receipts": 2447.82,
+      "expected": 1826.93,
+      "miles_per_day": 110.85714285714286,
+      "receipts_per_day": 349.68857142857144,
+      "expected_per_day": 260.99
+    },
+    {
+      "case_num": 429,
+      "days": 10,
+      "miles": 1009,
+      "receipts": 2164.22,
+      "expected": 1889.87,
+      "miles_per_day": 100.9,
+      "receipts_per_day": 216.42199999999997,
+      "expected_per_day": 188.987
+    },
+    {
+      "case_num": 449,
+      "days": 10,
+      "miles": 175,
+      "receipts": 1443.25,
+      "expected": 1635.5,
+      "miles_per_day": 17.5,
+      "receipts_per_day": 144.325,
+      "expected_per_day": 163.55
+    },
+    {
+      "case_num": 464,
+      "days": 7,
+      "miles": 336,
+      "receipts": 1843.58,
+      "expected": 1691.68,
+      "miles_per_day": 48.0,
+      "receipts_per_day": 263.36857142857144,
+      "expected_per_day": 241.66857142857143
+    },
+    {
+      "case_num": 467,
+      "days": 7,
+      "miles": 690,
+      "receipts": 1807.71,
+      "expected": 1710.98,
+      "miles_per_day": 98.57142857142857,
+      "receipts_per_day": 258.2442857142857,
+      "expected_per_day": 244.4257142857143
+    },
+    {
+      "case_num": 484,
+      "days": 9,
+      "miles": 800,
+      "receipts": 2167.72,
+      "expected": 1726.51,
+      "miles_per_day": 88.88888888888889,
+      "receipts_per_day": 240.85777777777776,
+      "expected_per_day": 191.83444444444444
+    },
+    {
+      "case_num": 494,
+      "days": 14,
+      "miles": 616,
+      "receipts": 2374.41,
+      "expected": 1828.37,
+      "miles_per_day": 44.0,
+      "receipts_per_day": 169.60071428571428,
+      "expected_per_day": 130.59785714285712
+    },
+    {
+      "case_num": 499,
+      "days": 5,
+      "miles": 741,
+      "receipts": 429.24,
+      "expected": 951.92,
+      "miles_per_day": 148.2,
+      "receipts_per_day": 85.848,
+      "expected_per_day": 190.384
+    },
+    {
+      "case_num": 505,
+      "days": 8,
+      "miles": 562,
+      "receipts": 2479.33,
+      "expected": 1478.31,
+      "miles_per_day": 70.25,
+      "receipts_per_day": 309.91625,
+      "expected_per_day": 184.78875
+    },
+    {
+      "case_num": 520,
+      "days": 14,
+      "miles": 481,
+      "receipts": 939.99,
+      "expected": 877.17,
+      "miles_per_day": 34.357142857142854,
+      "receipts_per_day": 67.14214285714286,
+      "expected_per_day": 62.654999999999994
+    },
+    {
+      "case_num": 525,
+      "days": 13,
+      "miles": 710,
+      "receipts": 2223.86,
+      "expected": 1979.83,
+      "miles_per_day": 54.61538461538461,
+      "receipts_per_day": 171.06615384615387,
+      "expected_per_day": 152.29461538461538
+    },
+    {
+      "case_num": 530,
+      "days": 8,
+      "miles": 1185,
+      "receipts": 554.98,
+      "expected": 1545.67,
+      "miles_per_day": 148.125,
+      "receipts_per_day": 69.3725,
+      "expected_per_day": 193.20875
+    },
+    {
+      "case_num": 531,
+      "days": 11,
+      "miles": 456,
+      "receipts": 2223.72,
+      "expected": 1600.1,
+      "miles_per_day": 41.45454545454545,
+      "receipts_per_day": 202.1563636363636,
+      "expected_per_day": 145.46363636363637
+    },
+    {
+      "case_num": 545,
+      "days": 10,
+      "miles": 886,
+      "receipts": 1990.03,
+      "expected": 1749.93,
+      "miles_per_day": 88.6,
+      "receipts_per_day": 199.003,
+      "expected_per_day": 174.993
+    },
+    {
+      "case_num": 547,
+      "days": 3,
+      "miles": 80,
+      "receipts": 517.54,
+      "expected": 457.49,
+      "miles_per_day": 26.666666666666668,
+      "receipts_per_day": 172.51333333333332,
+      "expected_per_day": 152.49666666666667
+    },
+    {
+      "case_num": 548,
+      "days": 8,
+      "miles": 482,
+      "receipts": 1411.49,
+      "expected": 631.81,
+      "miles_per_day": 60.25,
+      "receipts_per_day": 176.43625,
+      "expected_per_day": 78.97625
+    },
+    {
+      "case_num": 603,
+      "days": 5,
+      "miles": 1050,
+      "receipts": 882.86,
+      "expected": 1430.04,
+      "miles_per_day": 210.0,
+      "receipts_per_day": 176.572,
+      "expected_per_day": 286.008
+    },
+    {
+      "case_num": 612,
+      "days": 7,
+      "miles": 1000,
+      "receipts": 1620.46,
+      "expected": 1971.23,
+      "miles_per_day": 142.85714285714286,
+      "receipts_per_day": 231.49428571428572,
+      "expected_per_day": 281.6042857142857
+    },
+    {
+      "case_num": 613,
+      "days": 13,
+      "miles": 855,
+      "receipts": 1798.75,
+      "expected": 1951.77,
+      "miles_per_day": 65.76923076923077,
+      "receipts_per_day": 138.3653846153846,
+      "expected_per_day": 150.13615384615383
+    },
+    {
+      "case_num": 619,
+      "days": 6,
+      "miles": 470,
+      "receipts": 2235.72,
+      "expected": 1628.6,
+      "miles_per_day": 78.33333333333333,
+      "receipts_per_day": 372.61999999999995,
+      "expected_per_day": 271.43333333333334
+    },
+    {
+      "case_num": 634,
+      "days": 3,
+      "miles": 769,
+      "receipts": 2497.93,
+      "expected": 1587.8,
+      "miles_per_day": 256.3333333333333,
+      "receipts_per_day": 832.6433333333333,
+      "expected_per_day": 529.2666666666667
+    },
+    {
+      "case_num": 636,
+      "days": 12,
+      "miles": 1088,
+      "receipts": 1977.91,
+      "expected": 1883.21,
+      "miles_per_day": 90.66666666666667,
+      "receipts_per_day": 164.82583333333335,
+      "expected_per_day": 156.93416666666667
+    },
+    {
+      "case_num": 652,
+      "days": 7,
+      "miles": 256,
+      "receipts": 2180.53,
+      "expected": 1548.87,
+      "miles_per_day": 36.57142857142857,
+      "receipts_per_day": 311.50428571428574,
+      "expected_per_day": 221.26714285714283
+    },
+    {
+      "case_num": 677,
+      "days": 5,
+      "miles": 1116,
+      "receipts": 2460.46,
+      "expected": 1711.97,
+      "miles_per_day": 223.2,
+      "receipts_per_day": 492.092,
+      "expected_per_day": 342.394
+    },
+    {
+      "case_num": 693,
+      "days": 10,
+      "miles": 834,
+      "receipts": 1820.8,
+      "expected": 1883.49,
+      "miles_per_day": 83.4,
+      "receipts_per_day": 182.07999999999998,
+      "expected_per_day": 188.349
+    },
+    {
+      "case_num": 694,
+      "days": 1,
+      "miles": 1112,
+      "receipts": 2011.44,
+      "expected": 1423.85,
+      "miles_per_day": 1112.0,
+      "receipts_per_day": 2011.44,
+      "expected_per_day": 1423.85
+    },
+    {
+      "case_num": 701,
+      "days": 4,
+      "miles": 1180,
+      "receipts": 1948.55,
+      "expected": 1565.16,
+      "miles_per_day": 295.0,
+      "receipts_per_day": 487.1375,
+      "expected_per_day": 391.29
+    },
+    {
+      "case_num": 703,
+      "days": 5,
+      "miles": 691,
+      "receipts": 1030.64,
+      "expected": 1465.26,
+      "miles_per_day": 138.2,
+      "receipts_per_day": 206.12800000000001,
+      "expected_per_day": 293.052
+    },
+    {
+      "case_num": 711,
+      "days": 5,
+      "miles": 516,
+      "receipts": 1878.49,
+      "expected": 669.85,
+      "miles_per_day": 103.2,
+      "receipts_per_day": 375.698,
+      "expected_per_day": 133.97
+    },
+    {
+      "case_num": 712,
+      "days": 14,
+      "miles": 904,
+      "receipts": 2005.96,
+      "expected": 1970.01,
+      "miles_per_day": 64.57142857142857,
+      "receipts_per_day": 143.28285714285715,
+      "expected_per_day": 140.715
+    },
+    {
+      "case_num": 714,
+      "days": 14,
+      "miles": 555,
+      "receipts": 313.73,
+      "expected": 1201.26,
+      "miles_per_day": 39.642857142857146,
+      "receipts_per_day": 22.409285714285716,
+      "expected_per_day": 85.80428571428571
+    },
+    {
+      "case_num": 716,
+      "days": 8,
+      "miles": 792,
+      "receipts": 2437.24,
+      "expected": 1556.7,
+      "miles_per_day": 99.0,
+      "receipts_per_day": 304.655,
+      "expected_per_day": 194.5875
+    },
+    {
+      "case_num": 733,
+      "days": 9,
+      "miles": 896,
+      "receipts": 1398.54,
+      "expected": 1727.1,
+      "miles_per_day": 99.55555555555556,
+      "receipts_per_day": 155.39333333333332,
+      "expected_per_day": 191.89999999999998
+    },
+    {
+      "case_num": 735,
+      "days": 3,
+      "miles": 665,
+      "receipts": 2418.16,
+      "expected": 1490.96,
+      "miles_per_day": 221.66666666666666,
+      "receipts_per_day": 806.0533333333333,
+      "expected_per_day": 496.9866666666667
+    },
+    {
+      "case_num": 744,
+      "days": 5,
+      "miles": 1077,
+      "receipts": 2234.35,
+      "expected": 1665.23,
+      "miles_per_day": 215.4,
+      "receipts_per_day": 446.87,
+      "expected_per_day": 333.046
+    },
+    {
+      "case_num": 795,
+      "days": 10,
+      "miles": 150,
+      "receipts": 418.41,
+      "expected": 844.9,
+      "miles_per_day": 15.0,
+      "receipts_per_day": 41.841,
+      "expected_per_day": 84.49
+    },
+    {
+      "case_num": 801,
+      "days": 7,
+      "miles": 150,
+      "receipts": 1379.35,
+      "expected": 1500.09,
+      "miles_per_day": 21.428571428571427,
+      "receipts_per_day": 197.04999999999998,
+      "expected_per_day": 214.29857142857142
+    },
+    {
+      "case_num": 802,
+      "days": 6,
+      "miles": 751,
+      "receipts": 2085.98,
+      "expected": 1757.81,
+      "miles_per_day": 125.16666666666667,
+      "receipts_per_day": 347.66333333333336,
+      "expected_per_day": 292.9683333333333
+    },
+    {
+      "case_num": 854,
+      "days": 4,
+      "miles": 810,
+      "receipts": 1852.31,
+      "expected": 1575.87,
+      "miles_per_day": 202.5,
+      "receipts_per_day": 463.0775,
+      "expected_per_day": 393.9675
+    },
+    {
+      "case_num": 855,
+      "days": 3,
+      "miles": 760,
+      "receipts": 2073.25,
+      "expected": 1522.45,
+      "miles_per_day": 253.33333333333334,
+      "receipts_per_day": 691.0833333333334,
+      "expected_per_day": 507.48333333333335
+    },
+    {
+      "case_num": 861,
+      "days": 7,
+      "miles": 15,
+      "receipts": 2436.67,
+      "expected": 1459.63,
+      "miles_per_day": 2.142857142857143,
+      "receipts_per_day": 348.0957142857143,
+      "expected_per_day": 208.51857142857145
+    },
+    {
+      "case_num": 863,
+      "days": 5,
+      "miles": 41,
+      "receipts": 2314.68,
+      "expected": 1500.28,
+      "miles_per_day": 8.2,
+      "receipts_per_day": 462.936,
+      "expected_per_day": 300.056
+    },
+    {
+      "case_num": 871,
+      "days": 14,
+      "miles": 1020,
+      "receipts": 1201.75,
+      "expected": 2337.73,
+      "miles_per_day": 72.85714285714286,
+      "receipts_per_day": 85.83928571428571,
+      "expected_per_day": 166.9807142857143
+    },
+    {
+      "case_num": 881,
+      "days": 9,
+      "miles": 1139,
+      "receipts": 1973.31,
+      "expected": 1759.33,
+      "miles_per_day": 126.55555555555556,
+      "receipts_per_day": 219.25666666666666,
+      "expected_per_day": 195.4811111111111
+    },
+    {
+      "case_num": 885,
+      "days": 2,
+      "miles": 897,
+      "receipts": 2382.39,
+      "expected": 1437.95,
+      "miles_per_day": 448.5,
+      "receipts_per_day": 1191.195,
+      "expected_per_day": 718.975
+    },
+    {
+      "case_num": 914,
+      "days": 13,
+      "miles": 1055,
+      "receipts": 2005.84,
+      "expected": 1997.52,
+      "miles_per_day": 81.15384615384616,
+      "receipts_per_day": 154.29538461538462,
+      "expected_per_day": 153.6553846153846
+    },
+    {
+      "case_num": 923,
+      "days": 5,
+      "miles": 406,
+      "receipts": 1084.16,
+      "expected": 1399.39,
+      "miles_per_day": 81.2,
+      "receipts_per_day": 216.83200000000002,
+      "expected_per_day": 279.87800000000004
+    },
+    {
+      "case_num": 940,
+      "days": 1,
+      "miles": 1002,
+      "receipts": 2320.13,
+      "expected": 1475.4,
+      "miles_per_day": 1002.0,
+      "receipts_per_day": 2320.13,
+      "expected_per_day": 1475.4
+    },
+    {
+      "case_num": 954,
+      "days": 10,
+      "miles": 396,
+      "receipts": 2068.65,
+      "expected": 1556.68,
+      "miles_per_day": 39.6,
+      "receipts_per_day": 206.865,
+      "expected_per_day": 155.668
+    },
+    {
+      "case_num": 964,
+      "days": 8,
+      "miles": 1053,
+      "receipts": 1864.01,
+      "expected": 1794.57,
+      "miles_per_day": 131.625,
+      "receipts_per_day": 233.00125,
+      "expected_per_day": 224.32125
+    },
+    {
+      "case_num": 981,
+      "days": 1,
+      "miles": 1122,
+      "receipts": 861.5,
+      "expected": 1081.05,
+      "miles_per_day": 1122.0,
+      "receipts_per_day": 861.5,
+      "expected_per_day": 1081.05
+    },
+    {
+      "case_num": 990,
+      "days": 3,
+      "miles": 992,
+      "receipts": 1897.41,
+      "expected": 1539,
+      "miles_per_day": 330.6666666666667,
+      "receipts_per_day": 632.47,
+      "expected_per_day": 513.0
+    }
+  ]
+}
