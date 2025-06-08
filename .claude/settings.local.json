@@ -15,7 +15,13 @@
       "Bash(bash:*)",
       "Bash(grep:*)",
       "Bash(ls:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(python:*)",
+      "Bash(jq:*)",
+      "Bash(find:*)",
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(true)"
     ],
     "deny": []
   }
